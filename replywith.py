@@ -12,6 +12,6 @@ def replywith():
     if message.author == client.user: 
       return 
 
-    if message.content.startswith('&hello'):
+    if message.content.startswith('l&hello'):
       await message.channel.send('Hello')
 client.run(os.getenv('TOKEN'))

@@ -15,7 +15,7 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-  if message.content.startswith("&echo"):
+  if message.content.startswith("l&echo"):
     await message.channel.send(message.content[5:].format(message))
     await message.delete()
 
